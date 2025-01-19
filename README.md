@@ -10,10 +10,10 @@ The bulk of the changes are in `src/r8168_n.c`.
 You can build and install it from source with DKMS, following the standard DKMS installation steps:
   - Clone this repository.
   - rm -rf the `.git` directory
-  - rename this directory to `r8168-10.013.00`
+  - rename this directory to `r8168-8.053.00`
   - copy the entire renamed directory to `/usr/src/` (you need root to do this)
-  - do `sudo dkms add r8168/10.013.00`
-  - followed by `sudo dkms install r8168/10.013.00`
+  - do `sudo dkms add r8168/8.053.00`
+  - followed by `sudo dkms install r8168/8.053.00`
 
 That's it. On Fedora at least, `dkms install` doesn't actually install the module where it's set to go in
 `dkms.conf`. It installs it instead in `/lib/modules/$(uname -r)/extra/`.
